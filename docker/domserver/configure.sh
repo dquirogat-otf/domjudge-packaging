@@ -81,4 +81,4 @@ sed -i '/error_log/d' "$NGINX_CONFIG_FILE"
 
 # Fix permissions on cache and log directories
 chown www-data: -R /opt/domjudge/domserver/webapp/var
-chown -R www-data:www-data webapp/var/{cache,log}
+chown -R www-data:www-data /opt/domjudge/domserver/webapp/var
