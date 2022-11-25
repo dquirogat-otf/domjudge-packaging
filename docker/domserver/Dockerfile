@@ -83,7 +83,7 @@ COPY domserver/configure.sh /configure.sh
 RUN chmod 700 /configure.sh && /configure.sh && rm -f /configure.sh
 
 # Expose HTTP port
-EXPOSE 80
+EXPOSE 12345
 
 # Healthchecking script
 HEALTHCHECK --interval=10s --timeout=10s --start-period=30s --retries=3 CMD [ "/scripts/bin/healthcheck" ]
